@@ -44,4 +44,4 @@ Login with nonexistent username
     Set Username  nonexistuser
     Set Password  somepassword
     Click Button  Login
-    Login Should Fail With Message  Salasanat eivät täsmää
+    Login Should Fail With Message  Invalid username or password

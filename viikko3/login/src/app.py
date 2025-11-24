@@ -98,7 +98,6 @@ def handle_register():
         flash("Käyttäjätunnus on jo käytössä")
         return redirect_to_register()
     
-
     try:
         user_service.create_user(username, password, password_confirmation)
         return redirect_to_welcome()
