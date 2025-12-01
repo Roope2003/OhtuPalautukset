@@ -1,10 +1,4 @@
 class TennisGame:
-    def __init__(self, player1_name, player2_name):
-        self.player1_name = player1_name
-        self.player2_name = player2_name
-        self.m_score1 = 0
-        self.m_score2 = 0
-
     _SCORE_NAMES = {
         0: "Love",
         1: "Fifteen",
@@ -21,6 +15,12 @@ class TennisGame:
     _ADVANTAGE_PLAYER2 = "Advantage player2"
     _WIN_PLAYER1 = "Win for player1"
     _WIN_PLAYER2 = "Win for player2"
+
+    def __init__(self, player1_name, player2_name):
+        self.player1_name = player1_name
+        self.player2_name = player2_name
+        self.m_score1 = 0
+        self.m_score2 = 0
 
     def won_point(self, player_name):
         if player_name == self.player1_name:
